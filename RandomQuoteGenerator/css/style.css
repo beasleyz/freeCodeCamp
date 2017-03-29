@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Open+Sans');
+
+body {
+	background-color: lavender;
+	transition : background-color .7s ease-in-out;
+}
+
+#quoteSection {
+  position: fixed;
+  top: 50%;
+
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+#quoteBox {
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+}
+#quote {
+	padding: 20px;
+}
+
+#quote h4 {
+	font-family: 'Frank Ruhl Libre', sans-serif;
+	font-weight: 500;
+}
+
+#author {
+	text-align: right;
+	margin-right: 20px;
+	font-family: Open Sans;
+}
+#next {
+	float: right;
+}
+
+.btn-container{
+    float: none;
+    margin: 0 auto;
+	  font-family: font-family: 'Frank Ruhl Libre', sans-serif;
+}
