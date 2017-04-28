@@ -1,0 +1,111 @@
+#weather {
+  position:absolute;
+  margin-top:-25px;
+  top:50%;
+}
+
+.wrap {
+	perspective: 1000px;
+	perspective-origin: 50% 100px;
+  display: inline-block;
+}
+
+#its {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+#city {
+  position: relative;
+  display: inline-block;
+  margin-left: 55px;
+}
+
+.cube {
+	display: inline-block;
+  margin-bottom: 50px;
+	width: 50px;
+	transform-style: preserve-3d;
+}
+
+.cube div {
+	position: absolute;
+	width: 100px;
+	height: 60px;
+}
+
+#farenheight_face {
+	transform: rotateY(90deg) translateX(25px);
+	transform-origin: center;
+  background-color: white;
+} 
+
+#celcius_face {
+	transform: translateZ(25px);
+  background-color: white;
+}
+
+@keyframes rotate_forward {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(-90deg); }
+}
+
+@keyframes rotate_backward {
+	from { transform: rotateY(-90deg); }
+	to { transform: rotateY(0deg); }
+}
+
+@keyframes color-change {
+    from {background-color: white;}
+    to {background-color: black;}
+}
+
+.forward {
+	animation: rotate_forward 1s forwards;
+transition-timing: ease;
+}
+
+.backward {
+	animation: rotate_backward 1s forwards;
+transition-timing: ease;
+}
+
+.white-text {
+ color: white;
+}
+
+
+
+#far {
+  position: relative;
+  top: 24%;
+}
+
+#cel {
+  position: relative;
+  top: 24%;
+}
+
+#cel:hover {
+  text-decoration: underline;
+}
+
+#far:hover {
+  text-decoration: underline;
+}
+
+
+#skycon {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  margin-right: 15px;
+}
+
+
+/* */
+
